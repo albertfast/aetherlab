@@ -1,0 +1,11 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Tooling artifacts (Playwright MCP snapshots, etc.)
+.playwright-mcp/
+
+# Logs
+*.log

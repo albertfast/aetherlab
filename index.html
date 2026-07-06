@@ -35,10 +35,16 @@
 <!-- Styles -->
 <link rel="stylesheet" href="assets/css/styles.css">
 
-<!-- Three.js for the 3D aether background -->
-<script src="https://unpkg.com/three@0.169.0/build/three.min.js" defer></script>
-<script src="assets/js/aether.js" defer></script>
+<!-- Three.js for the 3D aether background (ES module + importmap) -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.169.0/build/three.module.js"
+  }
+}
+</script>
 <script src="assets/js/main.js" defer></script>
+<script type="module" src="assets/js/aether.js"></script>
 
 <!-- Structured data -->
 <script type="application/ld+json">

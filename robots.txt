@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://albertfast.github.io/aetherlab/sitemap.xml

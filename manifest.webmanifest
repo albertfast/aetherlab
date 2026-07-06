@@ -1,0 +1,13 @@
+{
+  "name": "Aether Lab",
+  "short_name": "Aether Lab",
+  "description": "An independent software studio crafting beautiful, useful mobile apps.",
+  "start_url": "/aetherlab/",
+  "scope": "/aetherlab/",
+  "display": "standalone",
+  "background_color": "#05070d",
+  "theme_color": "#05070d",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
