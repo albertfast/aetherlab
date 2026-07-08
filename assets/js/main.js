@@ -191,21 +191,6 @@
     });
   })();
 
-  /* ----------------------- Magnetic buttons ----------------------- */
-  (function magnetic() {
-    if (isCoarse || prefersReduced) return;
-    $$('[data-magnetic]').forEach(el => {
-      const strength = 0.3;
-      el.addEventListener('pointermove', (e) => {
-        const r = el.getBoundingClientRect();
-        const x = e.clientX - r.left - r.width / 2;
-        const y = e.clientY - r.top - r.height / 2;
-        el.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
-      });
-      el.addEventListener('pointerleave', () => { el.style.transform = ''; });
-    });
-  })();
-
   /* ----------------------- Smooth anchor scrolling ----------------------- */
   document.addEventListener('click', (e) => {
     const a = e.target.closest('a[href^="#"]');
