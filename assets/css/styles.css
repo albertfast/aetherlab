@@ -556,6 +556,8 @@ body.loading::after{
   body{ font-size:16px; }
   .container{ padding:0 20px; }
   .nav{ padding:0 20px; }
+  /* Keep the 3D layer visible on phones — it's now a lightweight material. */
+  #aether-canvas{ opacity:.85; }
   .hero{ padding-top:calc(var(--nav-h) + 20px); }
   .hero__stats{ gap:28px; }
   .manifesto__grid, .apps__grid, .cap__grid{ grid-template-columns:1fr; }

@@ -75,20 +75,37 @@ import * as THREE from 'three';
   scene.add(fill);
 
   // ---------------- Materials ----------------
-  // Clear glass with violet attenuation — reads as "aether crystal" on dark.
-  const glassMat = new THREE.MeshPhysicalMaterial({
-    color: 0xffffff,
-    metalness: 0,
-    roughness: 0.05,
-    transmission: 1,
-    thickness: 1.6,
-    ior: 1.45,
-    clearcoat: 1,
-    clearcoatRoughness: 0.05,
-    attenuationColor: new THREE.Color(0x8b7bff),
-    attenuationDistance: 5,
-    envMapIntensity: 1.4
-  });
+  // Desktop uses real transmission glass (heavy but gorgeous). On mobile we
+  // fall back to a much cheaper transparent standard material that still
+  // reads as glowing crystal — transmission render passes are too costly
+  // for many phones and can fail to appear at all on iOS Safari.
+  let glassMat;
+  if (isMobile) {
+    glassMat = new THREE.MeshStandardMaterial({
+      color: 0x9aa6ff,
+      metalness: 0.3,
+      roughness: 0.15,
+      transparent: true,
+      opacity: 0.32,
+      envMapIntensity: 1.6,
+      emissive: new THREE.Color(0x2a1f6e),
+      emissiveIntensity: 0.4
+    });
+  } else {
+    glassMat = new THREE.MeshPhysicalMaterial({
+      color: 0xffffff,
+      metalness: 0,
+      roughness: 0.05,
+      transmission: 1,
+      thickness: 1.6,
+      ior: 1.45,
+      clearcoat: 1,
+      clearcoatRoughness: 0.05,
+      attenuationColor: new THREE.Color(0x8b7bff),
+      attenuationDistance: 5,
+      envMapIntensity: 1.4
+    });
+  }
 
   // Dark chrome metal — the heavy counterpart.
   const darkMetal = new THREE.MeshPhysicalMaterial({
@@ -175,10 +192,11 @@ import * as THREE from 'three';
     edgeColor: 0xff7ad9, edgeOpacity: 0.3
   });
 
-  // Mobile: keep only the hero crystal for perf + readability.
+  // Mobile: keep 3 objects (hero + 2 accents) — enough presence without
+  // the heavy transmission cost or crowding a narrow screen.
   if (isMobile) {
-    objects.slice(1).forEach(o => scene.remove(o.group));
-    objects.splice(1);
+    objects.slice(3).forEach(o => scene.remove(o.group));
+    objects.splice(3);
   }
 
   // ---------------- Interaction ----------------
@@ -204,6 +222,14 @@ import * as THREE from 'three';
   // ---------------- Visibility pause ----------------
   let running = true;
   document.addEventListener('visibilitychange', () => { running = !document.hidden; });
+
+  // ---------------- WebGL context loss (common on iOS Safari) ----------------
+  // If the GPU drops the context (memory pressure, background tab), stop the
+  // loop cleanly so the page never freezes. The CSS aurora stays as fallback.
+  renderer.domElement.addEventListener('webglcontextlost', (e) => {
+    e.preventDefault();
+    running = false;
+  }, false);
 
   // ---------------- Animate ----------------
   const clock = new THREE.Clock();
