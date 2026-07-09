@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#05070d">
   <meta name="color-scheme" content="dark">
-  <title>Aether Lab — Building apps from the fifth element</title>
+  <title>Aether Lab — Independent App Studio (AI Photo, Dreams, Plants & More)</title>
   <meta name="description"
     content="Aether Lab is an independent software studio crafting beautiful, useful mobile apps. From AI photo editing to dream interpretation, plant care to radar detection — we build the apps people keep on their home screen.">
   <meta name="author" content="Aether Lab">
   <meta name="keywords"
     content="Aether Lab, Aether Lab apps, mobile apps, iOS apps, app studio, Retouchly, Somnia, Matria, Rootine, Radar Flow, Growlytics, AI apps">
+  <link rel="canonical" href="https://albertfast.github.io/aetherlab/">
 
   <!-- Open Graph / social -->
   <meta property="og:type" content="website">
@@ -19,16 +20,25 @@
   <meta property="og:title" content="Aether Lab — Building apps from the fifth element">
   <meta property="og:description" content="An independent software studio crafting beautiful, useful mobile apps.">
   <meta property="og:url" content="https://albertfast.github.io/aetherlab/">
-  <meta property="og:image" content="https://albertfast.github.io/aetherlab/assets/og/cover.svg">
+  <meta property="og:image" content="https://albertfast.github.io/aetherlab/assets/og/cover.png">
+  <meta property="og:image:secure_url" content="https://albertfast.github.io/aetherlab/assets/og/cover.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Aether Lab — We build apps from the fifth element">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Aether Lab — Building apps from the fifth element">
   <meta name="twitter:description" content="An independent software studio crafting beautiful, useful mobile apps.">
-  <meta name="twitter:image" content="https://albertfast.github.io/aetherlab/assets/og/cover.svg">
+  <meta name="twitter:image" content="https://albertfast.github.io/aetherlab/assets/og/cover.png">
+  <meta name="twitter:image:alt" content="Aether Lab — We build apps from the fifth element">
   <meta name="google-site-verification" content="qwdDAMJ4YkBzZoLNgffJ_9xXOCQp5HaFkp4rMGJOJvo" />
 
   <!-- Icons -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
 
   <!-- Fonts -->
@@ -52,24 +62,108 @@
   <script src="assets/js/main.js" defer></script>
   <script type="module" src="assets/js/aether.js"></script>
 
-  <!-- Structured data -->
+  <!-- Structured data: Organization + WebSite + SoftwareApplications -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Aether Lab",
-  "url": "https://albertfast.github.io/aetherlab/",
-  "logo": "https://albertfast.github.io/aetherlab/assets/favicon.svg",
-  "description": "An independent software studio crafting beautiful, useful mobile apps.",
-  "founders": [
-    { "@type": "Person", "name": "Ahmet Sahiner", "jobTitle": "Co-founder & Engineer" },
-    { "@type": "Person", "name": "Alperen Şirin", "jobTitle": "Co-founder" }
-  ],
-  "sameAs": [
-    "https://www.facebook.com/profile.php?id=61591936070699",
-    "https://www.instagram.com/aetherlabapps/"
-  ]
-}
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Aether Lab",
+    "url": "https://albertfast.github.io/aetherlab/",
+    "logo": "https://albertfast.github.io/aetherlab/assets/icon-512.png",
+    "image": "https://albertfast.github.io/aetherlab/assets/og/cover.png",
+    "description": "An independent software studio crafting beautiful, useful mobile apps.",
+    "email": "aetherlabapps@gmail.com",
+    "founders": [
+      { "@type": "Person", "name": "Ahmet Sahiner", "jobTitle": "Co-founder & Engineer" },
+      { "@type": "Person", "name": "Alperen Şirin", "jobTitle": "Co-founder" }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61591936070699",
+      "https://www.instagram.com/aetherlabapps/"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Aether Lab",
+    "url": "https://albertfast.github.io/aetherlab/",
+    "publisher": { "@type": "Organization", "name": "Aether Lab" },
+    "inLanguage": "en"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Aether Lab Apps",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Retouchly",
+          "applicationCategory": "PhotographyApplication",
+          "operatingSystem": "iOS",
+          "url": "https://albertfast.github.io/retouchly/",
+          "description": "AI photo editor for portrait retouch, object removal, background replace, and upscaling.",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Somnia",
+          "applicationCategory": "LifestyleApplication",
+          "operatingSystem": "iOS",
+          "url": "https://albertfast.github.io/somnia/",
+          "description": "Private dream journal with AI Jungian interpretations and subconscious visualization.",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Matria",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "iOS",
+          "url": "https://albertfast.github.io/matria/",
+          "description": "Evidence-based pregnancy tracker with milestone logging and local health monitoring.",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Radar Flow",
+          "applicationCategory": "NavigationApplication",
+          "operatingSystem": "iOS",
+          "url": "https://albertfast.github.io/radar_tinder/",
+          "description": "Real-time radar detection with community reporting and navigation features.",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Growlytics AI",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "url": "https://lumencommerce.onrender.com/",
+          "description": "AI-native growth intelligence platform for first-party data and media optimization.",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+        }
+      }
+    ]
+  }
+]
 </script>
 </head>
 

@@ -25,7 +25,8 @@ assets/
   css/styles.css        Full design system
   js/aether.js          Three.js 3D aether particle field (background)
   js/main.js            Cursor, reveals, nav, tilt, magnetic, form
-  favicon.svg · og/cover.svg
+  favicon.svg · favicon.ico · apple-touch-icon.png · icon-192/512.png
+  og/cover.svg · og/cover.png (1200×630 social share image)
 ```
 
 ## Tech
