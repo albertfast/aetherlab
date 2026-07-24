@@ -4,7 +4,7 @@
 
 The official website for **ORVLI** — an independent app studio. We follow a simple loop: **Originate · Refine · Validate · Launch · Iterate.** Built as a single static site (HTML/CSS/JS, no build step) and deployed via GitHub Pages.
 
-🔗 Live: <https://albertfast.github.io/orvli/>
+🔗 Live: <https://orvli.tech/>
 
 ## Apps showcased
 - **Retouchly** — AI Photo Editor

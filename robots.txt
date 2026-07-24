@@ -2,6 +2,6 @@ User-agent: *
 Allow: /
 
 # Don't index legal boilerplate or error pages
-Disallow: /orvli/404.html
+Disallow: /404.html
 
-Sitemap: https://albertfast.github.io/orvli/sitemap.xml
+Sitemap: https://orvli.tech/sitemap.xml
