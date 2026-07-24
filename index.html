@@ -262,6 +262,9 @@
           <div class="stat"><span class="stat__num" data-count="100" data-suffix="%">0</span><span
               class="stat__lbl">independent</span></div>
         </div>
+        <div class="hero__loop reveal" data-reveal aria-hidden="true">
+          <span>O</span><span class="hero__loop-dot">·</span><span>R</span><span class="hero__loop-dot">·</span><span>V</span><span class="hero__loop-dot">·</span><span>L</span><span class="hero__loop-dot">·</span><span>I</span>
+        </div>
       </div>
 
       <a href="#manifesto" class="hero__scroll" aria-label="Scroll down">
@@ -270,7 +273,7 @@
       </a>
     </section>
 
-    <!-- ============================ MANIFESTO ============================ -->
+    <!-- ============================ MANIFESTO / ORVLI LOOP ============================ -->
     <section class="manifesto" id="manifesto">
       <div class="container">
         <p class="manifesto__lead reveal" data-reveal>
@@ -279,26 +282,60 @@
           then keep refining it with the people who use it. The loop never closes; every product
           stays in motion.
         </p>
-        <div class="manifesto__grid">
-          <div class="mcard reveal" data-reveal>
-            <div class="mcard__num">01</div>
-            <h3>Craft over noise</h3>
-            <p>We'd rather ship one polished app than ten forgettable ones. Every pixel, animation, and tap target earns
-              its place.</p>
+
+        <!-- The O·R·V·L·I loop — the signature of the studio -->
+        <div class="loop reveal" data-reveal>
+          <div class="loop__step" data-step="O">
+            <div class="loop__mark"><span>O</span></div>
+            <div class="loop__body">
+              <h3 class="loop__name">Originate</h3>
+              <p class="loop__desc">Find the idea. The spark worth chasing.</p>
+            </div>
           </div>
-          <div class="mcard reveal" data-reveal>
-            <div class="mcard__num">02</div>
-            <h3>Useful, not just clever</h3>
-            <p>AI is a tool, not a headline. We use it where it genuinely helps a person — retouching a photo,
-              understanding a dream, saving a plant.</p>
+          <div class="loop__step" data-step="R">
+            <div class="loop__mark"><span>R</span></div>
+            <div class="loop__body">
+              <h3 class="loop__name">Refine</h3>
+              <p class="loop__desc">Simplify. Strip it to its essence.</p>
+            </div>
           </div>
-          <div class="mcard reveal" data-reveal>
-            <div class="mcard__num">03</div>
-            <h3>Privacy by default</h3>
-            <p>Your data stays yours. We design for on-device first, minimal collection, and transparency you can read
-              in plain language.</p>
+          <div class="loop__step loop__step--accent" data-step="V">
+            <div class="loop__mark"><span>V</span></div>
+            <div class="loop__body">
+              <h3 class="loop__name">Validate</h3>
+              <p class="loop__desc">Check it against a real need.</p>
+            </div>
+          </div>
+          <div class="loop__step" data-step="L">
+            <div class="loop__mark"><span>L</span></div>
+            <div class="loop__body">
+              <h3 class="loop__name">Launch</h3>
+              <p class="loop__desc">Ship the product. Put it in hands.</p>
+            </div>
+          </div>
+          <div class="loop__step loop__step--accent" data-step="I">
+            <div class="loop__mark"><span>I</span></div>
+            <div class="loop__body">
+              <h3 class="loop__name">Iterate</h3>
+              <p class="loop__desc">Grow it with the people who use it.</p>
+            </div>
+          </div>
+          <!-- The loop closes back to Originate — it never ends -->
+          <div class="loop__return" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12a9 9 0 1 0 3-6.7L3 8" />
+              <path d="M3 3v5h5" />
+            </svg>
+            <span>loops back to Originate</span>
           </div>
         </div>
+
+        <p class="manifesto__foot reveal" data-reveal>
+          The name says it: an open <strong>O</strong> for a process that never stops evolving,
+          a <strong>V</strong> for direction and forward movement, and the purple spine of each
+          independent product running through it all.
+        </p>
       </div>
     </section>
 
@@ -731,7 +768,7 @@
     </div>
     <div class="container footer__bottom">
       <p>© <span id="year">2026</span> ORVLI. All rights reserved.</p>
-      <p class="footer__made">Crafted with intent · San Francisco × Remote</p>
+      <p class="footer__made">Originate · Refine · Validate · Launch · Iterate</p>
     </div>
   </footer>
 

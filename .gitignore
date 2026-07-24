@@ -6,6 +6,7 @@
 
 # Tooling artifacts (Playwright MCP snapshots, etc.)
 .playwright-mcp/
+.zcode/
 
 # Logs
 *.log
