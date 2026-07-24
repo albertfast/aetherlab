@@ -1,5 +1,5 @@
 /* ============================================================
-   AETHER LAB — Interactions
+   ORVLI — Interactions
    Cursor, scroll reveals, nav, 3D tilt on cards, magnetic
    buttons, animated counters, mobile menu, contact form.
    ============================================================ */
@@ -228,7 +228,7 @@
 
       // Compose a mailto: handoff — opens the user's mail client.
       const body = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\n${message}`;
-      const mailto = `mailto:aetherlabapps@gmail.com?subject=${encodeURIComponent('[Aether Lab] ' + subject)}&body=${encodeURIComponent(body)}`;
+      const mailto = `mailto:hello@orvli.com?subject=${encodeURIComponent('[ORVLI] ' + subject)}&body=${encodeURIComponent(body)}`;
       note.textContent = 'Opening your mail app…';
       note.className = 'contact__form-note ok';
       window.location.href = mailto;

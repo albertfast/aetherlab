@@ -1,11 +1,11 @@
 /* ============================================================
-   AETHER LAB — Design System
+   ORVLI — Design System
    A modern, animated, 3D-backed brand site.
    ============================================================ */
 
 /* ----------------------------- Tokens ----------------------------- */
 :root{
-  /* Palette — deep space + aether accents */
+  /* Palette — deep space + neon accents */
   --bg:        #05070d;
   --bg-2:      #080b14;
   --surface:   rgba(255,255,255,.04);
@@ -18,7 +18,7 @@
   --muted:     #7e879b;
   --muted-2:   #5a6275;
 
-  /* Aether gradient stops */
+  /* Gradient stops */
   --cyan:      #7af0ff;
   --violet:    #8b7bff;
   --pink:      #ff7ad9;
@@ -85,7 +85,7 @@ ul{ list-style:none; }
 }
 
 /* ----------------------------- Background layers ----------------------------- */
-#aether-canvas{
+#orvli-canvas{
   position:fixed; inset:0; z-index:0;
   pointer-events:none;
 }
@@ -557,7 +557,7 @@ body.loading::after{
   .container{ padding:0 20px; }
   .nav{ padding:0 20px; }
   /* Keep the 3D layer visible on phones — it's now a lightweight material. */
-  #aether-canvas{ opacity:.85; }
+  #orvli-canvas{ opacity:.85; }
   .hero{ padding-top:calc(var(--nav-h) + 20px); }
   .hero__stats{ gap:28px; }
   .manifesto__grid, .apps__grid, .cap__grid{ grid-template-columns:1fr; }

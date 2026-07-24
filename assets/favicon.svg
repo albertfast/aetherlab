@@ -7,6 +7,10 @@
     </linearGradient>
   </defs>
   <rect width="40" height="40" rx="9" fill="#05070d"/>
-  <path d="M20 5 L33 32 H27.5 L20 16 L12.5 32 H7 Z" fill="url(#g)"/>
-  <path d="M14.5 25.5 H25.5 L23.8 29.5 H16.2 Z" fill="url(#g)" opacity=".65"/>
+  <!-- Open O / open loop — Originate → Iterate (the process never closes) -->
+  <path d="M26.5 8.7 A13 13 0 1 1 13.5 8.7" fill="none" stroke="url(#g)" stroke-width="4.2" stroke-linecap="round"/>
+  <!-- V inside — Validate: direction & forward movement -->
+  <path d="M14 15 L20 25 L26 15" fill="none" stroke="url(#g)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Purple vertical spine — the independent product emerging from the idea -->
+  <path d="M20 25 L20 30" fill="none" stroke="#8b7bff" stroke-width="2.8" stroke-linecap="round"/>
 </svg>

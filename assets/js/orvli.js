@@ -1,5 +1,5 @@
 /* ============================================================
-   AETHER LAB — Floating 3D objects (dark theme)
+   ORVLI — Floating 3D objects (dark theme)
    Real, solid geometry drifting in the deep-space background.
    Neon-edged glass, emissive wireframes, dark metal — they match
    the cyan/violet/pink accents of the site. No starfield: these
@@ -10,7 +10,7 @@ import * as THREE from 'three';
 (function () {
   'use strict';
 
-  const mount = document.getElementById('aether-canvas');
+  const mount = document.getElementById('orvli-canvas');
   if (!mount) return;
 
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -138,7 +138,7 @@ import * as THREE from 'three';
     return group;
   }
 
-  // — Hero: large glass icosahedron (the aether crystal), center-right.
+  // — Hero: large glass icosahedron (the signature crystal), center-right.
   makeObject({
     geo: new THREE.IcosahedronGeometry(2.4, 0),
     mat: glassMat,
